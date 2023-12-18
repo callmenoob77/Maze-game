@@ -1,0 +1,28 @@
+body{
+    overflow: hidden;
+    background-image: url('maze3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+}
+
+canvas{
+    margin: calc(50vh - 275px) calc(50vw - 250px);
+}
+.my-button {
+    background-image:url('men.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+
+    color: white;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    top: calc(2vh);
+    left: calc(2vw);
+    border-radius: 30px;
+    margin-bottom: 50px;
+}

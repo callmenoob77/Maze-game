@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Avatar Selection</title>
+  <link rel="shortcut icon" href="p1.png">
+  <link rel = "stylesheet" href = "styleavatar.css">
+  <script>
+    function showMessage(imageNum) {
+      localStorage.setItem('favoriteMovie', imageNum);
+      var message = document.createElement("div");
+      message.setAttribute("id", "message");
+      message.innerHTML = "A selection was made.";
+      document.body.appendChild(message);
+      setTimeout(function () {
+        document.body.removeChild(message);
+      }, 2000);
+    }
+  </script>
+</head>
+<body>
+
+<a href="Main_Menu.html">
+  <button class="my-button"> </button>
+</a>
+<h1>Choose your avatar</h1>
+<div>
+  <img src="p1.png" alt="Image 1" onclick="showMessage(1)">
+  <p>Harry Potter</p>
+</div>
+<div>
+  <img src="p2.png" alt="Image 2" onclick="showMessage(2)">
+  <p>Razvan when SEPI</p>
+</div>
+<div>
+  <img src="p3.png" alt="Image 3" onclick="showMessage(3)">
+  <p>The Monopoly car</p>
+</div>
+<div>
+  <img src="p4.png" alt="Image 4" onclick="showMessage(4)">
+  <p>The police</p>
+</div>
+<div>
+  <img src="p5.png" alt="Image 5" onclick="showMessage(5)">
+  <p>Garfield</p>
+</div>
+<div>
+  <img src="p6.png" alt="Image 6" onclick="showMessage(6)">
+  <p>The poop<3</p>
+</div>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+</body>
+</html>
